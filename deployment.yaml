@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: flaskdemo
+  name: flaskdemo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flaskdemo  
+  template:
+    metadata:
+      labels:
+        app: flaskdemo  
+    spec:
+      containers:
+      - image: YOUR-DOCKERHUB-USERNAME/test:TAG  # 👈 REPLACE THIS
+        name: flaskdemo
+        ports:
+        - containerPort: 5000  
+        resources: {}          
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flaskdemo-service
+spec:
+  type: NodePort
+  selector:
+    app: flaskdemo  
+  ports:
+    - protocol: TCP 
+      port: 80       
+      targetPort: 5000 
+      nodePort: 30007   
