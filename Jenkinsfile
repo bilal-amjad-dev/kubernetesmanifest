@@ -4,7 +4,7 @@ node {
     // ========== REPLACE THESE VALUES ========== //
     def gitUsername   = "your-github-username"     // 👈 Your GitHub username
     def gitEmail      = "your-email@example.com"   // 👈 Your email
-    def dockerhubUser = "your-dockerhub-id"        // 👈 Your DockerHub username
+    def dockerhubUser = "your-dockerhub-id"        // 👈 Replace with your DockerHub username
     // ========================================= //
     
     stage('Clone repository') {
