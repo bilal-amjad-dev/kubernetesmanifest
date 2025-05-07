@@ -3,7 +3,7 @@ node {
     
     // ========== REPLACE THESE VALUES ========== //
     def gitUsername   = "bilal-amjad-dev"     // 👈 Your GitHub username
-    def gitEmail      = "muhammadbilalvirtual@gmail.com"   // 👈 Your email
+    def gitEmail      = "devopsengineerbilalamjad@gmail.com"   // 👈 Your email
     def dockerhubUser = "bilalamjaddev"        // 👈 Replace with your DockerHub username
     // ========================================= //
     
