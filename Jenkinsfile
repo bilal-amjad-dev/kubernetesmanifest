@@ -25,7 +25,7 @@ node {
 
                     // Update deployment.yaml with the user's Docker Hub image
                     sh "cat deployment.yaml"
-                    sh "sed -i 's+${dockerhubUser}/test.*+${dockerhubUser}/test:${DOCKERTAG}+g' deployment.yaml"
+                    sh "sed -i 's+${dockerhubUser}/1tierapp.*+${dockerhubUser}/1tierapp:${DOCKERTAG}+g' deployment.yaml"
                     sh "cat deployment.yaml"
 
                     // Commit and push changes
