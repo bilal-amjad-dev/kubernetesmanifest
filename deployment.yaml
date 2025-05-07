@@ -15,7 +15,7 @@ spec:
         app: flaskdemo  
     spec:
       containers:
-      - image: YOUR-DOCKERHUB-USERNAME/1tierapp:${BUILD_NUMBER}  # 👈 Replace with your DockerHub username
+      - image: bilalamjaddev/1tierapp:${BUILD_NUMBER}  # 👈 Replace with your DockerHub username
         name: flaskdemo
         imagePullPolicy: Always  
         ports:
