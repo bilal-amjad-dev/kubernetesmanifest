@@ -15,7 +15,7 @@ spec:
         app: flaskdemo  
     spec:
       containers:
-      - image: YOUR-DOCKERHUB-USERNAME/test:TAG  # 👈 REPLACE THIS
+      - image: YOUR-DOCKERHUB-USERNAME/1tierapp:TAG  # 👈 REPLACE THIS
         name: flaskdemo
         ports:
         - containerPort: 5000  
