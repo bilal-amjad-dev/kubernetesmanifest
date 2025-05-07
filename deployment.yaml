@@ -15,8 +15,9 @@ spec:
         app: flaskdemo  
     spec:
       containers:
-      - image: YOUR-DOCKERHUB-USERNAME/1tierapp:TAG  # 👈 REPLACE THIS
+      - image: YOUR-DOCKERHUB-USERNAME/1tierapp:latest  # 👈 Replace with your DockerHub username
         name: flaskdemo
+        imagePullPolicy: Always  # 👈 Ensures Kubernetes pulls the latest image
         ports:
         - containerPort: 5000  
         resources: {}          
@@ -33,4 +34,4 @@ spec:
     - protocol: TCP 
       port: 80       
       targetPort: 5000 
-      nodePort: 30007   
+      nodePort: 30007
