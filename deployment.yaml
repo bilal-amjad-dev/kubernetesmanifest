@@ -17,7 +17,7 @@ spec:
       containers:
       - image: YOUR-DOCKERHUB-USERNAME/1tierapp:latest  # 👈 Replace with your DockerHub username
         name: flaskdemo
-        imagePullPolicy: Always  # 👈 Ensures Kubernetes pulls the latest image
+        imagePullPolicy: Always  
         ports:
         - containerPort: 5000  
         resources: {}          
